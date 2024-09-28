@@ -1,0 +1,212 @@
+.upcoming__courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming__courses h2 {
+    color: black;
+    padding-top: 40px;
+}
+
+.course {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    position: static;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+    min-height: 200px;
+    animation: fadeIn 2s ease-in-out, slideIn 1s ease-in-out;
+    transition: .5s ease;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.course li {
+    list-style: none;
+}
+
+.course li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.course h3 {
+    color: rgb(0, 0, 0);
+    opacity: 100%;
+}
+
+.course p {
+    line-height: 30px;
+    color: #000000;
+}
+
+.course li a:hover {
+    color: rgb(255, 8, 0);
+    text-decoration: none;
+}
+
+.course:hover {
+    transform: scale(1.0129);
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 50px;
+}
+
+#head h2 {
+    font-size: 40px;
+}
+
+.coursebar {
+    margin: 20px 85px;
+    height: auto;
+}
+
+.coursetype {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+    flex-wrap: wrap;
+    position: static;
+    height: auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(45px, 1fr);
+    grid-template-areas: ". .";
+}
+
+.coursetype-part {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+    flex-wrap: wrap;
+    position: static;
+    height: auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(45px, 1fr);
+    grid-template-areas: ". .";
+}
+
+.coursetypes {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 4px;
+    flex-wrap: wrap;
+    position: static;
+    height: auto;
+    column-gap: 4px;
+    row-gap: 4px;
+    grid-template-columns: 1fr;
+    grid-template-areas: ". .";
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s ease;
+    width: 100%;
+}
+
+#buttons a {
+    padding: 8px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.589);
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#buttons a:hover {
+    box-shadow: 0 0 20px rgba(14, 14, 14, 0.473);
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@media only screen and (max-width: 575px) {
+    .coursetype,
+    .coursetypes,
+    .coursetype-part {
+        grid-template-columns: 1fr;
+        grid-template-areas: ".";
+    }
+    #head h2 {
+        font-size: 30px;
+    }
+    #talk,
+    #talks {
+        padding: 10px 10px;
+        margin: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .course {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        box-sizing: border-box;
+        display: flex;
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 28px;
+        position: static;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.151);
+        min-height: 200px;
+        animation: fadeIn 2s ease-in-out, slideIn 1s ease-in-out;
+        transition: .5s ease;
+    }
+    .coursebar {
+        margin: 20px 20px;
+    }
+}

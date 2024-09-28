@@ -1,0 +1,263 @@
+/*=============== GOOGLE FONTS ===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+    --header-height: 3.5rem;
+    /*========== Colors ==========*/
+    --first-color: hsl(220, 68%, 54%);
+    --first-color-lighten: hsl(158, 73%, 97%);
+    --title-color: hsl(220, 48%, 28%);
+    --text-color: hsl(220, 12%, 45%);
+    --body-color: hsl(220, 100%, 99%);
+    --body-font: "Poppins", sans-serif;
+    --normal-font-size: .7rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 1024px) {
+     :root {
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+/*=============== BASE ===============*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: rgb(255, 255, 255);
+    color: var(--text-color);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke: 1px rgb(255, 0, 0); */
+    font-size: 30px;
+}
+
+h3 {
+    color: rgb(0, 255, 64);
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+/*=============== HOME SECTION ===============*/
+
+.home__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 79vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.562)), url("images/bg.jpg");
+}
+
+
+/*===============  HOME ===============*/
+
+.home__container .container__info {
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home__container .container__info h1 {
+    font-size: 2em;
+    font-weight: var(--font-medium);
+}
+
+.home__container .container__info a {
+    background: #fff;
+    padding: 10px 30px;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.home__container .container__info a:hover {
+    background-color: rgb(155, 255, 163);
+}
+
+.home__container .container__info p {
+    margin-bottom: 25px;
+}
+
+
+/*===============  MEDIA ICONS ===============*/
+
+.home__container .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.home__container .media-icons a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+
+.media-icons a:hover {
+    transform: scale(1.3);
+    color: yellow;
+}
+
+
+/*===============  ABOUT SECTION ===============*/
+
+#about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px 0;
+}
+
+#about__container__info {
+    width: 90%;
+    height: auto;
+    background-color: #ffffff;
+    animation: slideIn 1.5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+#information__txt {
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 50px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#information__txt a {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 20px;
+    padding: 20px 0;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+#information__txt h2 {
+    color: #000000;
+    margin: 20px 0;
+}
+
+#information__txt p {
+    color: black;
+}
+
+#sub__informations {
+    animation: fadeIn 2s ease-in-out;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(243, 255, 241, 0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.048);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+#img {
+    width: 5vh;
+    height: 5vh;
+    content: '';
+    border: 1px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#sub__informations h2 {
+    color: #000000;
+}
+
+#sub__informations a {
+    color: #000000;
+    padding-bottom: 20px;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#sub__informations p {
+    margin: 20px 0;
+    color: black;
+}
+
+#sub__informations div li {
+    color: rgb(0, 0, 0);
+}
+
+#sub__informations div li a {
+    text-decoration: none;
+    background: rgb(253, 253, 253);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 1;
+}
+
+#sub__informations div li a:hover {
+    background: rgb(102, 255, 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media only screen and (max-width: 801px) {
+    #about__container__info {
+        padding: 10px 20px;
+    }
+}

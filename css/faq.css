@@ -1,0 +1,35 @@
+/* faq styling */
+
+#faq {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#faq-border {
+    width: 90%;
+    height: auto;
+    background-color: #ffffff00;
+    border: 1px solid black;
+    animation: slideIn 1.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#faq-border p {
+    padding: 20px 20px;
+    color: black;
+}
+
+#faq-txt a {
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+
+#faq-txt {
+    padding: 0px 10px 20px 10px;
+}
