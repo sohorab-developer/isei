@@ -5,7 +5,7 @@
 .cursor {
     width: 20px;
     height: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(148, 148, 148);
     border-radius: 50%;
     position: absolute;
     transition-duration: 200ms;
@@ -20,7 +20,7 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    border: 8px solid gray;
+    border: 8px solid rgb(177, 177, 177);
     border-radius: 50%;
     opacity: .5;
     top: -9px;
@@ -61,5 +61,5 @@
 
 .expand {
     animation: cursorAnim3 .5s forwards;
-    border: 1px solid rgb(216, 89, 255);
+    border: 1px solid rgb(182, 182, 182);
 }
