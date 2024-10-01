@@ -11,7 +11,7 @@
 #faq-border {
     width: 90%;
     height: auto;
-    background-color: #ffffff00;
+    background-color: #192b3c;
     border: 1px solid black;
     animation: slideIn 1.5s ease-in-out;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.199);
@@ -22,11 +22,11 @@
 
 #faq-border p {
     padding: 20px 20px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 #faq-txt a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px 0;
 }
 
