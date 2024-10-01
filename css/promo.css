@@ -1,17 +1,17 @@
 #promo-video {
     gap: 20px;
-    background-color: #0d0b1d00;
+    background-color: #192b3c;
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 20%;
+    margin: 2% 20%;
 }
 
 #promo-video h2 {
-    color: white;
+    color: rgb(255, 255, 255);
     opacity: 1;
     text-decoration: cadetblue;
     font-size: 30px;
@@ -27,8 +27,6 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
-    filter: grayscale(0%);
-    transition: filter 0.3s ease;
 }
 
 .play-button {
@@ -36,9 +34,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
-    background: url('path/to/your/play-button-image.png') no-repeat center;
+    width: 120px;
+    height: 120px;
+    background: url('images/logo') no-repeat center;
     background-size: contain;
     cursor: pointer;
     z-index: 10;
@@ -64,4 +62,24 @@
     cursor: pointer;
     display: none;
     z-index: 15;
+}
+
+@media only screen and (max-width: 801px) {
+    #promo-video h2 {
+        color: rgb(0, 0, 0);
+        opacity: 1;
+        text-decoration: cadetblue;
+        font-size: 1rem;
+    }
+    #promo-video {
+        gap: 20px;
+        background-color: #1e00ff00;
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 10%;
+    }
 }
